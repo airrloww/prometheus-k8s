@@ -1,5 +1,3 @@
-# POC prometheus
-
 ## monitor a k8s cluster with prometheus
 
 ### create a k8s cluster:
