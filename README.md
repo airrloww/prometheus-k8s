@@ -35,7 +35,7 @@ note 1: prometheus will look for label "release: prometheus", so add this label 
 
 note 2: selector on ServiceMonitor should match the labels on the app service file, this tells ServiceMonitor exactly which service to scrape and which port if needed.
 
-### route the traffic of service/g to access grafana UI
+### route the traffic of service/prometheus-grafana to access grafana UI
     k edit service/prometheus-grafana -n monitoring
 - Change type from ClusterIP to NodePort 
 - add nodePort: 30112 under - name: http-web
