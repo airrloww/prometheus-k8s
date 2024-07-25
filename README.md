@@ -21,9 +21,8 @@
 - add nodePort: 30111 under - name: http-web
 - then open Traffic Port Accessor and go to port 30111
 
-<br>
 note: this will monitor the cluster itself and not the apps deployed.
-<br><br><br>
+
 
 ## monitor an app running on the cluster
 there's a Prometheus library available for most programming languages. The library will provide a /metrics endpoint, which Prometheus will scrape to collect the metrics.
